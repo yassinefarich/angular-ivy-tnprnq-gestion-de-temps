@@ -1,0 +1,66 @@
+<h1>[CIVA-Répartition] POC Gestion du temps</h1>
+
+<h3>Répartition</h3>
+<table>
+  <tr>
+    <td>Nombre de crowders :</td>
+    <td><input type="number" [(ngModel)]="nombreDeCrowders" /></td>
+  </tr>
+  <tr>
+    <td>Nombre de pivots :</td>
+    <td><input type="number" [(ngModel)]="nombreDePivots" /></td>
+  </tr>
+  <tr>
+    <td>Nombre de Propositions par pivot :</td>
+    <td><input type="number" [(ngModel)]="nombreDePropositionsParPivots" /></td>
+  </tr>
+  <tr>
+    <td>Notation par proposition :</td>
+    <td>
+      <input type="number" [(ngModel)]="nombreDeNotationParProposition" />
+    </td>
+  </tr>
+</table>
+
+<h3>Temps</h3>
+<table>
+  <tr>
+    <td>Proposition de question :</td>
+    <td><input type="number" [(ngModel)]="tempsDePropositonDeQuest" /></td>
+  </tr>
+  <tr>
+    <td>Proposition de réponse :</td>
+    <td><input type="number" [(ngModel)]="tempsDePropositonDeRep" /></td>
+  </tr>
+  <tr>
+    <td>Notation de question :</td>
+    <td><input type="number" [(ngModel)]="tempsDeNotationDeQue" /></td>
+  </tr>
+  <tr>
+    <td>Notation de réponse :</td>
+    <td>
+      <input type="number" [(ngModel)]="tempsDeNotationDeRep" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nombre de sessions/semaine :</td>
+    <td>
+      <input type="number" [(ngModel)]="nbrDeSessionsParSemaine" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>Durée d'une session :</td>
+    <td>
+      <input type="number" [(ngModel)]="dureeDeSession" />
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><button (click)="calculerTemps()">Calculer</button></td>
+  </tr>
+</table>
+
+<br /><br />
+<textarea [(ngModel)]="resultat" style="width:80%; height:150px"></textarea>
